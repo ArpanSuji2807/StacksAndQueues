@@ -8,7 +8,7 @@ class program
         LinkedListStacks list = new LinkedListStacks();
         LinkedListQueue queue = new LinkedListQueue();
         bool check = true;
-        Console.WriteLine("1.Stack Creation\n2.Peek And Pop stacks\n3.Queue creation");
+        Console.WriteLine("1.Stack Creation\n2.Peek And Pop stacks\n3.Queue creation\n4.Dequeue linked list");
         while(check)
         {
             Console.WriteLine("Take an option to execute: ");
@@ -35,6 +35,13 @@ class program
                     queue.Display();
                     break;
                 case 4:
+                    queue.Enqueue(56);
+                    queue.Enqueue(56);
+                    queue.Enqueue(56);
+                    queue.Dequeue();
+                    queue.Display();
+                    break;
+                case 5:
                     Console.WriteLine("Enter a valid choice");
                     break;
                     default:break;
